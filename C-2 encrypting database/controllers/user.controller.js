@@ -20,7 +20,7 @@ const logInUser = async (req, res) => {
   try {
     const { email, password } = req.body;
     const user = await User.findOne({ email: email });
-    if (user && password === password) {
+    if (user && user.password === password) {
       res.status(201).json({
         message: "user is logged-In",
         data: user,
