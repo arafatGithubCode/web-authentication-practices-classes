@@ -1,0 +1,23 @@
+<%- include("./layouts/header.ejs") %>
+<main>
+  <h1>Log-In page</h1>
+  <form action="/log-in" method="post">
+    <div>
+      <label for="name">Name: </label>
+      <input type="name" name="name" id="name" placeholder="Enter name" />
+    </div>
+    <br />
+    <div>
+      <label for="password">Password: </label>
+      <input
+        type="password"
+        name="password"
+        id="password"
+        placeholder="Enter password"
+      />
+    </div>
+    <br />
+    <button type="submit">Log-In</button>
+  </form>
+</main>
+<%- include("./layouts/footer.ejs") %>
