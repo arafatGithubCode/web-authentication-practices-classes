@@ -1,0 +1,3 @@
+//Register -> form (username, password, register button)
+
+//log-in -> form (username, password, log-in button) yes -> profile component, Not -> stay login
